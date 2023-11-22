@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cf9f264ee5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Search</title>
+</head>
+
+<body>
+
+    <div class="all-queries">
+        <h2>Search Here</h2>
+        <div class="query-data">
+            <h3 id="query">Vijay Thalapathy</h3><i onclick="searchOnGoogle()" class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+
+    <script>
+        function searchOnGoogle(query) {
+
+            var q = document.getElementById("query").innerHTML;
+
+            console.log(q);
+
+            var searchUrl = 'https://www.google.com/search?q=' + encodeURIComponent(q);
+
+
+            window.open(searchUrl, '_blank');
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+body{
+    font-family: sans-serif;
+}
+
+.all-queries .query-data{
+    display: flex;
+    align-items: center;
+    background-color: rgb(67, 67, 67);
+    width: 400px;
+    height: 15px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 10px;
+    color: orangered;
+}
+.query-data i{
+    position: absolute;
+    left: 400px;
+    cursor: pointer;
+}
